@@ -1,0 +1,23 @@
+{
+  "name": "react-native-date-range-dialog",
+  "version": "1.0.0",
+  "description": "ReactNative DateRange Dialog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fengtianhe/react-native-date-range-dialog.git"
+  },
+  "author": "fengtianhe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fengtianhe/react-native-date-range-dialog/issues"
+  },
+  "dependencies": {
+    "react-native-calendars": "*",
+    "moment": "*"
+  },
+  "homepage": "https://github.com/Fengtianhe/react-native-date-range-dialog#readme"
+}
