@@ -1,6 +1,6 @@
 {
   "name": "react-native-date-range-dialog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ReactNative DateRange Dialog",
   "main": "index.js",
   "scripts": {

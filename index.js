@@ -89,10 +89,17 @@ export default class DateRangeDialog extends React.Component {
   }
   
   onConfirm () {
-    let responseData = {
-      start: this.state.start,
-      end: this.state.end
+    let {start, end} = this.state
+    let mStart = moment(start, 'YYYY-MM-DD')
+    let mEnd = moment(end, 'YYYY-MM-DD')
+    let diffDays = mEnd.diff(mStart, 'days')
+    let responseData = {}
+    if (diffDays > 0) {
+      responseData = {start, end}
+    } else {
+      responseData = {start: end, end: start}
     }
+  
     this.props.onConfirm && this.props.onConfirm(responseData)
     this.setState({visible: false})
   }
